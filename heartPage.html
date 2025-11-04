@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6d1d1;
+            margin: 0;
+        }
+
+        #heart {
+            width: 200px;
+            height: 200px;
+            animation: heartAnimation 2s infinite;
+        }
+
+        @keyframes heartAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img id="heart" src="heart.gif" alt="Heart" />
+
+<script>
+        // Set timeout to redirect after 10 seconds
+        setTimeout(() => {
+            window.location.href = "next_page.html"; // Change this to your actual next page URL
+        }, 10000); // 10 seconds
+    </script>
+
+</body>
+</html>
